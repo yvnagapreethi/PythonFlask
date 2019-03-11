@@ -25,7 +25,9 @@ def report():
 
     report = lower_letter and upper_letter and last_num
 
-    return render_template('report.html', report=report, lower_letter=lower_letter, upper_letter=upper_letter, last_num=last_num)
+    return render_template('report.html', report=report,
+                           lower_letter=lower_letter, upper_letter=upper_letter,
+                           last_num=last_num)
 
 
 if __name__ == '__main__':
